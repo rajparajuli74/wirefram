@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Prices</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+<body>
+    <header>
+        <h1>Cryptocurrency Prices</h1>
+        <nav>
+            <input type="text" id="search-bar" placeholder="Search for a cryptocurrency...">
+            <button id="login-btn">Login</button>
+        </nav>
+    </header>
+    <main class="crypto-container">
+        <div class="crypto-card" id="bitcoin">
+            <img src="bitcoin-2007769_1280.jpg" alt="Bitcoin">
+            <h2>Bitcoin</h2>
+            <p class="price">$0.00</p>
+            <a href="bitcoin.html" class="details-link">View Details</a>
+        </div>
+        <div class="crypto-card" id="ethereum">
+            <img src="Vitalik_Buterin_eth.jpg" alt="Ethereum">
+            <h2>Ethereum</h2>
+            <p class="price">$0.00</p>
+            <a href="ethereum.html" class="details-link">View Details</a>
+        </div>
+        <div class="crypto-card" id="litecoin">
+            <img src="golden-litcoin" alt="Litecoin">
+            <h2>Litecoin</h2>
+            <p class="price">$0.00</p>
+            <a href="litecoin.html" class="details-link">View Details</a>
+        </div>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="contact-info">
+            <p>Contact us: <a href="mailto:info@cryptosite.com">info@cryptosite.com</a></p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
